@@ -1,0 +1,143 @@
+# CPUtest3 - FIBONACCI NUMBERS to 144
+# 
+# THIS TEST SHOULD HALT WITH THE PC AT 0C hex
+# 
+#      TIME       PC    INSTR    OP   ADR   DATA
+# 
+#   ----------    --    -----    --   ---   ----
+# 
+#      95.0 ns    00    JMP      7    00     xx     e3
+# Next Fibonacci number is   0
+#     255.0 ns    03    LDA      5    03     00     bb
+#     415.0 ns    04    STO      6    04     00     dc
+#     575.0 ns    05    ADD      2    05     00     5a
+#     735.0 ns    06    STO      6    06     01     db
+#     895.0 ns    07    LDA      5    07     01     bc
+#    1055.0 ns    08    STO      6    08     00     da
+#    1215.0 ns    09    XOR      4    09     00     9d
+#    1375.0 ns    0a    SKZ      1    0a     90     20
+#    1535.0 ns    0b    JMP      7    0b     90     e3
+# Next Fibonacci number is   1
+#    1695.0 ns    03    LDA      5    03     90     bb
+#    1855.0 ns    04    STO      6    04     01     dc
+#    2015.0 ns    05    ADD      2    05     01     5a
+#    2175.0 ns    06    STO      6    06     01     db
+#    2335.0 ns    07    LDA      5    07     01     bc
+#    2495.0 ns    08    STO      6    08     01     da
+#    2655.0 ns    09    XOR      4    09     01     9d
+#    2815.0 ns    0a    SKZ      1    0a     91     20
+#    2975.0 ns    0b    JMP      7    0b     91     e3
+# Next Fibonacci number is   1
+#    3135.0 ns    03    LDA      5    03     91     bb
+#    3295.0 ns    04    STO      6    04     01     dc
+#    3455.0 ns    05    ADD      2    05     01     5a
+#    3615.0 ns    06    STO      6    06     02     db
+#    3775.0 ns    07    LDA      5    07     02     bc
+#    3935.0 ns    08    STO      6    08     01     da
+#    4095.0 ns    09    XOR      4    09     01     9d
+#    4255.0 ns    0a    SKZ      1    0a     91     20
+#    4415.0 ns    0b    JMP      7    0b     91     e3
+# Next Fibonacci number is   2
+#    4575.0 ns    03    LDA      5    03     91     bb
+#    4735.0 ns    04    STO      6    04     02     dc
+#    4895.0 ns    05    ADD      2    05     02     5a
+#    5055.0 ns    06    STO      6    06     03     db
+#    5215.0 ns    07    LDA      5    07     03     bc
+#    5375.0 ns    08    STO      6    08     02     da
+#    5535.0 ns    09    XOR      4    09     02     9d
+#    5695.0 ns    0a    SKZ      1    0a     92     20
+#    5855.0 ns    0b    JMP      7    0b     92     e3
+# Next Fibonacci number is   3
+#    6015.0 ns    03    LDA      5    03     92     bb
+#    6175.0 ns    04    STO      6    04     03     dc
+#    6335.0 ns    05    ADD      2    05     03     5a
+#    6495.0 ns    06    STO      6    06     05     db
+#    6655.0 ns    07    LDA      5    07     05     bc
+#    6815.0 ns    08    STO      6    08     03     da
+#    6975.0 ns    09    XOR      4    09     03     9d
+#    7135.0 ns    0a    SKZ      1    0a     93     20
+#    7295.0 ns    0b    JMP      7    0b     93     e3
+# Next Fibonacci number is   5
+#    7455.0 ns    03    LDA      5    03     93     bb
+#    7615.0 ns    04    STO      6    04     05     dc
+#    7775.0 ns    05    ADD      2    05     05     5a
+#    7935.0 ns    06    STO      6    06     08     db
+#    8095.0 ns    07    LDA      5    07     08     bc
+#    8255.0 ns    08    STO      6    08     05     da
+#    8415.0 ns    09    XOR      4    09     05     9d
+#    8575.0 ns    0a    SKZ      1    0a     95     20
+#    8735.0 ns    0b    JMP      7    0b     95     e3
+# Next Fibonacci number is   8
+#    8895.0 ns    03    LDA      5    03     95     bb
+#    9055.0 ns    04    STO      6    04     08     dc
+#    9215.0 ns    05    ADD      2    05     08     5a
+#    9375.0 ns    06    STO      6    06     0d     db
+#    9535.0 ns    07    LDA      5    07     0d     bc
+#    9695.0 ns    08    STO      6    08     08     da
+#    9855.0 ns    09    XOR      4    09     08     9d
+#   10015.0 ns    0a    SKZ      1    0a     98     20
+#   10175.0 ns    0b    JMP      7    0b     98     e3
+# Next Fibonacci number is  13
+#   10335.0 ns    03    LDA      5    03     98     bb
+#   10495.0 ns    04    STO      6    04     0d     dc
+#   10655.0 ns    05    ADD      2    05     0d     5a
+#   10815.0 ns    06    STO      6    06     15     db
+#   10975.0 ns    07    LDA      5    07     15     bc
+#   11135.0 ns    08    STO      6    08     0d     da
+#   11295.0 ns    09    XOR      4    09     0d     9d
+#   11455.0 ns    0a    SKZ      1    0a     9d     20
+#   11615.0 ns    0b    JMP      7    0b     9d     e3
+# Next Fibonacci number is  21
+#   11775.0 ns    03    LDA      5    03     9d     bb
+#   11935.0 ns    04    STO      6    04     15     dc
+#   12095.0 ns    05    ADD      2    05     15     5a
+#   12255.0 ns    06    STO      6    06     22     db
+#   12415.0 ns    07    LDA      5    07     22     bc
+#   12575.0 ns    08    STO      6    08     15     da
+#   12735.0 ns    09    XOR      4    09     15     9d
+#   12895.0 ns    0a    SKZ      1    0a     85     20
+#   13055.0 ns    0b    JMP      7    0b     85     e3
+# Next Fibonacci number is  34
+#   13215.0 ns    03    LDA      5    03     85     bb
+#   13375.0 ns    04    STO      6    04     22     dc
+#   13535.0 ns    05    ADD      2    05     22     5a
+#   13695.0 ns    06    STO      6    06     37     db
+#   13855.0 ns    07    LDA      5    07     37     bc
+#   14015.0 ns    08    STO      6    08     22     da
+#   14175.0 ns    09    XOR      4    09     22     9d
+#   14335.0 ns    0a    SKZ      1    0a     b2     20
+#   14495.0 ns    0b    JMP      7    0b     b2     e3
+# Next Fibonacci number is  55
+#   14655.0 ns    03    LDA      5    03     b2     bb
+#   14815.0 ns    04    STO      6    04     37     dc
+#   14975.0 ns    05    ADD      2    05     37     5a
+#   15135.0 ns    06    STO      6    06     59     db
+#   15295.0 ns    07    LDA      5    07     59     bc
+#   15455.0 ns    08    STO      6    08     37     da
+#   15615.0 ns    09    XOR      4    09     37     9d
+#   15775.0 ns    0a    SKZ      1    0a     a7     20
+#   15935.0 ns    0b    JMP      7    0b     a7     e3
+# Next Fibonacci number is  89
+#   16095.0 ns    03    LDA      5    03     a7     bb
+#   16255.0 ns    04    STO      6    04     59     dc
+#   16415.0 ns    05    ADD      2    05     59     5a
+#   16575.0 ns    06    STO      6    06     90     db
+#   16735.0 ns    07    LDA      5    07     90     bc
+#   16895.0 ns    08    STO      6    08     59     da
+#   17055.0 ns    09    XOR      4    09     59     9d
+#   17215.0 ns    0a    SKZ      1    0a     c9     20
+#   17375.0 ns    0b    JMP      7    0b     c9     e3
+# Next Fibonacci number is 144
+#   17535.0 ns    03    LDA      5    03     c9     bb
+#   17695.0 ns    04    STO      6    04     90     dc
+#   17855.0 ns    05    ADD      2    05     90     5a
+#   18015.0 ns    06    STO      6    06     e9     db
+#   18175.0 ns    07    LDA      5    07     e9     bc
+#   18335.0 ns    08    STO      6    08     90     da
+#   18495.0 ns    09    XOR      4    09     90     9d
+#   18655.0 ns    0a    SKZ      1    0a     00     20
+#   18815.0 ns    0c    HLT      0    0c     00     00
+# 
+# CPU TEST 3 PASSED
+# ** Note: $finish    : C:/intelFPGA/20.1/work/aryan/cpu_test.sv(134)
+#    Time: 18870 ns  Iteration: 0  Instance: /cpu_test
