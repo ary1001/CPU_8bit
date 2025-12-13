@@ -1,5 +1,5 @@
 /******************************************************************************
- * Test program 2 for the VeriRisc CPU system, Verilog Training Course.
+ * Test program 2 for the VeriRisc CPU system.
  * 
  *
  * This diagnostic program tests the advanced instruction set of the VeriRisc
@@ -10,8 +10,6 @@
  * execute properly.  Refer to the comments in this file to see which
  * instruction failed.
  *
- * WARNING: The CPUtest1 diagnostic program should be completed successfully
- *          before this test is run.
  *****************************************************************************/
 
 //opcode_operand  // addr                   assembly code
@@ -26,10 +24,10 @@
     111_01001     //  07           JMP ADD_OK
     000_00000     //  08           HLT         //ADD doesn't work
     100_11100     //  09           XOR DATA_3
-    010_11010     //  0A           ADD DATA_1  //FF plus 1 makes -1
+    010_11010     //  0A           ADD DATA_1  
     110_11101     //  0B           STO TEMP
     101_11010     //  0C           LDA DATA_1
-    010_11101     //  0D           ADD TEMP    //-1 plus 1 should make zero
+    010_11101     //  0D           ADD TEMP    
     001_00000     //  0E           SKZ
     000_00000     //  0F           HLT         //ADD Doesn't work
     000_00000     //  10   END:    HLT         //CONGRATULATIONS - TEST2 PASSED!
