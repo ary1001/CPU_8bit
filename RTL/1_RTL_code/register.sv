@@ -9,8 +9,6 @@ import typedefs::*;
                                input  logic               aresetn,
                                input  logic               clock
                               );
-  //timeunit 1ns;
-  //timeprecision 100ps;
 
 always_ff @(posedge clock or negedge aresetn)
 begin : block_a
@@ -21,3 +19,4 @@ begin : block_a
   else;
 end : block_a
 endmodule
+
