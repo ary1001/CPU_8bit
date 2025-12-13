@@ -1,0 +1,26 @@
+# CPUtest2 - ADVANCED CPU DIAGNOSTIC PROGRAM
+# 
+# THIS TEST SHOULD HALT WITH THE PC AT 10 hex
+# 
+#      TIME       PC    INSTR    OP   ADR   DATA
+# 
+#   ----------    --    -----    --   ---   ----
+# 
+#      95.0 ns    00    LDA      5    00     xx     bb
+#     255.0 ns    01    AND      3    01     aa     7c
+#     415.0 ns    02    XOR      4    02     aa     9b
+#     575.0 ns    03    SKZ      1    03     00     20
+#     735.0 ns    05    ADD      2    05     00     5a
+#     895.0 ns    06    SKZ      1    06     01     20
+#    1055.0 ns    07    JMP      7    07     01     e9
+#    1215.0 ns    09    XOR      4    09     01     9c
+#    1375.0 ns    0a    ADD      2    0a     fe     5a
+#    1535.0 ns    0b    STO      6    0b     ff     dd
+#    1695.0 ns    0c    LDA      5    0c     ff     ba
+#    1855.0 ns    0d    ADD      2    0d     01     5d
+#    2015.0 ns    0e    SKZ      1    0e     00     20
+#    2175.0 ns    10    HLT      0    10     00     00
+# 
+# CPU TEST 2 PASSED
+# ** Note: $finish    : C:/intelFPGA/20.1/work/aryan/cpu_test.sv(134)
+#    Time: 2230 ns  Iteration: 0  Instance: /cpu_test
