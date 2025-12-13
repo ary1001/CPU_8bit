@@ -1,5 +1,5 @@
 /******************************************************************************
- * Test program 3 for the VeriRisc CPU system, Verilog Training Course.
+ * Test program 3 for the VeriRisc CPU system.
  * 
  *
  * This is an actual program that calculates the Fibonacci number sequence
@@ -9,9 +9,6 @@
  * in financial analysis, and can also be found in the patterns of pineapple
  * shells and some flower petals.
  *
- * WARNING: Do not run this program before the CPUtest1 and CPUtest2 diagnostic
- *          programs have completed successfully. Those who do are asking for
-            endless heartache.
  *****************************************************************************/
 
 //opcode_operand  // addr                     assembly code
