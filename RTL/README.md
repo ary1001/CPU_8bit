@@ -2,7 +2,7 @@
 # Simple 8-bit RISC-Based CPU (SystemVerilog)
 
 ## Overview
-This project implements a **simple accumulator-based CPU** using **SystemVerilog**, designed to demonstrate the complete **fetch–decode–execute** cycle using modular RTL components.
+This project implements a **simple RISC-based CPU** using **SystemVerilog**, designed to demonstrate the complete **fetch–decode–execute** cycle using modular RTL components.
 
 The CPU is instruction-driven, controlled by a finite state control unit, and supports basic arithmetic, logical, memory, and control-flow instructions.
 
