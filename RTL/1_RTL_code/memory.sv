@@ -1,7 +1,7 @@
 
 ///////////////////////////////////////////////////////////////////////////
 //
-// File name   : internal_mem.sv
+// File name   : memory.sv
 // Title       : Memory Module
 // Project     : SystemVerilog Training
 // Description : Defines the memory module
@@ -15,7 +15,7 @@
 //  The read and write signals should not be simultaneously high.
 // 
 ///////////////////////////////////////////////////////////////////////////
-module internal_mem (
+module memory (
   input              clk,
   input              read,
   input              write,
@@ -50,5 +50,6 @@ module internal_mem (
     data_out <= memory[addr];
   end
 
-endmodule : internal_mem
+endmodule : memory
+
 
